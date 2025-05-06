@@ -24,10 +24,15 @@ if (window.localStorage.getItem('theme-mode') === 'dark' || window.matchMedia('(
  --dark-background: url('https://ak.hypergryph.com/assets/index/images/ak/pc/bk.jpg');
  --light-background: url('/img/bk.jpg');
  --theme-encrypt-confirm: 'confirm'
-}</style><script defer src="/js/arknights.js"></script><script defer src="/js/search.js"></script><script async src="/js/gitalk.js"></script><script defer type="module">import mermaid from '//unpkg.com/mermaid@10.5.0/dist/mermaid.esm.mjs';
+}</style><script defer src="/js/arknights.js"></script><script defer src="/js/search.js"></script><script async src="//unpkg.com/valine/dist/Valine.min.js"></script><script async src="/js/gitalk.js"></script><script defer type="module">import mermaid from '//unpkg.com/mermaid@10.5.0/dist/mermaid.esm.mjs';
 window.mermaid = mermaid;
 code.paintMermaid();
-</script><script async src="//unpkg.com/lightgallery@2.7.1/lightgallery.min.js"></script><script async src="//unpkg.com/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script><script async src="//unpkg.com/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script><script async src="/lib/encrypt/hbe.js"></script><script async src="/js/pjax.js"></script><script class="pjax-js">reset= () => {gitalk = new Gitalk({
+</script><script async src="//unpkg.com/lightgallery@2.7.1/lightgallery.min.js"></script><script async src="//unpkg.com/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script><script async src="//unpkg.com/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script><script async src="/lib/encrypt/hbe.js"></script><script async src="/js/pjax.js"></script><script class="pjax-js">reset= () => {new Valine({
+ el: '#valine'
+ , appId: '7P4cTq0cZf2ticWnpoVwhOEQ-gzGzoHsz'
+ , appKey: 'k35NG3AR1U1RrykOvPNnkDfr' , placeholder: 'This comment is sent by Penguin Logistics.'
+ , path: window.location.pathname
+});gitalk = new Gitalk({
  clientID: '你的GitHub应用程序Client ID',
  clientSecret: '你的GitHub应用程序Client Secret',
  repo: 'Blog_talk',
@@ -52,7 +57,12 @@ lightGallery(document.getElementById('post-bg'), {
    }
  }
 });
-document.addEventListener("pjax:complete", reset);reset()})</script><script class="pjax-js">reset= () => {gitalk = new Gitalk({
+document.addEventListener("pjax:complete", reset);reset()})</script><script class="pjax-js">reset= () => {new Valine({
+ el: '#valine'
+ , appId: '7P4cTq0cZf2ticWnpoVwhOEQ-gzGzoHsz'
+ , appKey: 'k35NG3AR1U1RrykOvPNnkDfr' , placeholder: 'This comment is sent by Penguin Logistics.'
+ , path: window.location.pathname
+});gitalk = new Gitalk({
  clientID: '你的GitHub应用程序Client ID',
  clientSecret: '你的GitHub应用程序Client Secret',
  repo: 'Blog_talk',
